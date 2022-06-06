@@ -1,0 +1,30 @@
+This client will help putting bulk food order for nourish.me website.
+
+Usage:
+	python order_food.py <employee_details.xml>
+
+Input:
+	<employee_details.xml> : File containing details of employees 
+	Input file should be in following format -
+	
+	<?xml version="1.0" encoding="utf-8"?>
+	<Employees>
+		<Employee>
+			<Name>Max Mustermann</Name>
+			<Address>
+				<Street>Musterweg 3</Street>
+				<City>Musterhausen</City>
+				<PostalCode>12345</PostalCode>
+			</Address>
+			<Order>3x Pizza Quattro Formaggi</Order>
+			<IsAttending>true</IsAttending>
+		</Employee>
+	... </Employees>
+	NOTE: Orders are in the format of <amount>x <name of dish>[, <amount>x <name of dish>, ...].
+
+Output: 
+	It will place order in bulk.
+
+logfile:
+	orderfood.log file will be created which will contain logging.  
+  
